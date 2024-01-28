@@ -66,7 +66,7 @@ const Homepage: React.FC = () => {
         Hi, I'm David and I'm passionate about programming. Explore my
         projects, socials, and more!
       </Description>
-      <Button onClick={handleGetToKnowMeClick}>Get to Know Me</Button>
+      <Button onClick={handleGetToKnowMeClick}>Connect With Me!</Button>
     </Container>
   );
 };

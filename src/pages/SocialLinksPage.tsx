@@ -1,8 +1,7 @@
 // SocialLinksPage.tsx
 import React from "react";
 import styled from "styled-components";
-import { TwitterIcon } from "../icons/Icons";
-import { LinkedinIcon } from "../icons/Icons";
+import { GithubIcon, LinkedinIcon } from "../icons/Icons";
 
 const Container = styled.div`
   display: flex;
@@ -43,11 +42,8 @@ const SocialLink = styled.a`
 const SocialLinksPage: React.FC = () => {
   return (
     <Container>
-      <Title>Connect with Me</Title>
+      <Title>Connect with Me!</Title>
       <SocialLinksContainer>
-        <SocialLink href="https://twitter.com/shinkuwrld" target="_blank">
-          <TwitterIcon />
-        </SocialLink>
         <SocialLink
           href="https://www.linkedin.com/in/davidalanmcmanus/"
           target="_blank"
@@ -55,6 +51,9 @@ const SocialLinksPage: React.FC = () => {
           <LinkedinIcon />
         </SocialLink>
         {/* Add more social links as needed */}
+        <SocialLink href="https://github.com/ShinkuWRLD">
+          <GithubIcon/>
+        </SocialLink>
       </SocialLinksContainer>
     </Container>
   );
